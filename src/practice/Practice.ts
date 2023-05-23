@@ -6,6 +6,9 @@ import { LoopSubdivision } from 'three-subdivide';
 
 import { clock } from '../core/clock';
 import { sizes } from '../core/sizes';
+import duckGlbPath from './duck.glb?url';
+import fishGlbPath from './fish.glb?url';
+import foxGlbPath from './fox.glb?url';
 import fragmentShader from './fragment.glsl';
 import vertexShader from './vertex.glsl';
 
@@ -58,7 +61,7 @@ export class Practice {
   }
 
   private async getDuck() {
-    const gltf = await this.loadModel('/duck.glb');
+    const gltf = await this.loadModel(duckGlbPath);
     for (const child of gltf.scene.children[0].children) {
       if (child instanceof THREE.Mesh) {
         const scale = 5;
@@ -83,7 +86,7 @@ export class Practice {
   }
 
   private async getFish() {
-    const gltf = await this.loadModel('/fish.glb');
+    const gltf = await this.loadModel(fishGlbPath);
     for (const child of gltf.scene.children) {
       if (child instanceof THREE.Mesh) {
         const scale = 2000;
@@ -109,7 +112,7 @@ export class Practice {
   }
 
   private async getFox() {
-    const gltf = await this.loadModel('/fox.glb');
+    const gltf = await this.loadModel(foxGlbPath);
     for (const child of gltf.scene.children) {
       if (child instanceof THREE.Mesh) {
         const scale = 8;
