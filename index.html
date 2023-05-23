@@ -3,7 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>practice</title>
+    <title>tetramorph</title>
+    <style>
+      body {
+        height: 400vw;
+        scrollbar-width: thin;
+        scrollbar-color: #333 #666;
+      }
+      body::-webkit-scrollbar {
+        width: 10px;
+      }
+      body::-webkit-scrollbar-track {
+        background: #666;
+      }
+      body::-webkit-scrollbar-thumb {
+        background: #333;
+      }
+      canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+    </style>
   </head>
   <body>
     <script type="module" src="/src/main.ts"></script>

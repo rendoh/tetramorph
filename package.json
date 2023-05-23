@@ -1,5 +1,5 @@
 {
-  "name": "practice",
+  "name": "tetramorph",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -22,8 +22,10 @@
     "vite-plugin-glsl": "^1.1.2"
   },
   "dependencies": {
+    "gsap": "^3.11.5",
     "the-new-css-reset": "^1.8.4",
     "three": "^0.151.3",
+    "three-subdivide": "^1.1.2",
     "typescript-event-target": "^1.0.4"
   }
 }

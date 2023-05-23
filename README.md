@@ -1,3 +1,3 @@
-# Ray marching metaball example
+# Tetrahedron morphing
 
-[DEMO](https://rendoh.github.io/practice/)
+[DEMO](https://rendoh.github.io/tetramorph/)

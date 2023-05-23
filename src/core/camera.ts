@@ -15,7 +15,7 @@ class Camera {
     const camera = new THREE.PerspectiveCamera(
       this.calcFov(),
       sizes.width / sizes.height,
-      0.1,
+      1,
       distance * 2,
     );
     camera.position.z = distance;

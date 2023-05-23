@@ -12,6 +12,7 @@ const practice = new Practice();
 renderer.scene.add(practice.scene);
 
 function resize() {
+  practice.resize();
   renderer.resize();
 }
 
